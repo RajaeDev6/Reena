@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -77,5 +78,9 @@ func main() {
 
 	filename := data["output"].([]any)[0].(map[string]any)["content"].([]any)[0].(map[string]any)["text"].(string)
 
-	fmt.Println(filename)
+	err = os.Rename(image_path, filename+"."+ext)
+
+	if err != nil {
+		log.Fatal(err)
+	}
 }
