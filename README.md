@@ -4,3 +4,5 @@ A command line tool that uses AI to identify content in image then renames image
 
 Whenever i conduct a lab, renaming images so i know what goes where in report can be tedious as i have to manually check all to see whats inside, so i built this to rename images accordingly
 
+
+This currently is just a messy working version with harded image path. Working on clearning up code and better functionality
